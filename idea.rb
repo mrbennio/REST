@@ -28,13 +28,20 @@ def self.raw_ideas
   end
 end
     
-  
+    
   def self.database
     @database ||= YAML::Store.new('ideabox')
   end
   
   def database
     Idea.database
+  end
+  
+  def self.delete(position)
+    database.transaction do
+      database['ideas'].delete_at(position)
+    end
+  
   end
   
 end
