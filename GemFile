@@ -1,3 +1,5 @@
+#comment for the merge
+
 source 'https://rubygems.org'
 
 gem 'sinatra', require: 'sinatra/base'
