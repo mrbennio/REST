@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 #comment for the merge
+=======
+>>>>>>> upstream/master_local
 
 source 'https://rubygems.org'
 
